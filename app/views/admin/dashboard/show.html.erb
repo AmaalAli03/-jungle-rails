@@ -1,2 +1,27 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
+
+<h1>Hello JUNGLE Admins! </h1>
+<h3>Welcome to jungles product and categories lists... </h3>
+
+<div class="categories-show", "enable-shadows" >
+<h5>Take a moment and browse through our lovely plant options and see which one of these lovely plants can have a brand new home with you!</h5>
+</div>
+<div class="card">
+  <div class="card-header">
+    Products
+  </div>
+  <div class="card-body">
+    <p class="card-text">We have <%= @productsCount %> different plant choices you can love and adore</p>
+    <a href="/admin/products" class="btn btn-primary">Check it out</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Category
+  </div>
+  <div class="card-body">
+    <p class="card-text">We have <%= @categoriesCount %> different plant categories you can love and adore </p>
+    <a href="/admin/products" class="btn btn-primary">Check it out</a>
+  </div>
+</div>
+
