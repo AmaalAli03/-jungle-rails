@@ -1,0 +1,32 @@
+<section class="admin-categories-index">
+
+  <header class="page-header"> 
+    <h1>Admin &raquo; All Categories</h1>
+  </header>
+
+  <div class="panel panel-default categorys">
+
+    <table class="table table-bordered">
+   
+      <tbody>
+        <div class="card text-center">
+  <div class="card-header">
+    Categories
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Below you will find all the categories in our stock available and you can also add a new cateogry below :</h5>
+    <p class="card-text"><%= render @categories %></p>
+    <div class="well">
+    <%= link_to '+ Add a NEW Category', [:new, :admin, :category], class: 'btn btn-info' %>
+  </div>
+  </div>
+  <div class="card-footer text-muted">
+    Enjoy shopping at JUNGLE!
+  </div>
+</div>
+       </tbody>
+    </table>
+
+  </div>
+
+</section>
